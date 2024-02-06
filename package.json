@@ -1,0 +1,25 @@
+{
+  "name": "word-game",
+  "version": "0.1.0",
+  "private": true,
+  "author": "Josh Comeau <me@joshwcomeau.com>",
+  "dependencies": {
+    "eslint": "8.56.0",
+    "eslint-plugin-react": "^7.33.2",
+    "new-component": "5.0.2",
+    "parcel": "2.11.0",
+    "prettier": "3.2.5",
+    "process": "0.11.10",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "rimraf": "5.0.5"
+  },
+  "scripts": {
+    "predev": "rimraf .parcel-cache dist",
+    "dev": "parcel public/index.html",
+    "build": "parcel build public/index.html",
+    "new-component": "new-component",
+    "nc": "npm run new-component"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
+}
