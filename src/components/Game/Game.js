@@ -35,7 +35,6 @@ function Game() {
 
     const nextGuesses = [...guesses, possibleGuess]
     setGuesses(nextGuesses)
-    console.log('Guess:', possibleGuess)
     setPossibleGuess('')
 
     if (possibleGuess === answer) {
@@ -68,7 +67,7 @@ function Game() {
       {gameResult && gameResult === 'lose' && (
         <Banner status={gameResult}>
           <p>
-            Sorry, the correct answer is <strong>LEARN</strong>.{' '}
+            Sorry, the correct answer is <strong>{answer}</strong>.{' '}
             <button onClick={restartGame}>Restart</button>
           </p>
         </Banner>
